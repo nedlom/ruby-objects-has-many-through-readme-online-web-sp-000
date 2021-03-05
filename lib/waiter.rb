@@ -23,7 +23,7 @@ class Waiter
   end
   
   def best_tipper
-    meal = meals.collect {|m| m.customer}
+    meal = meals.max {|m| m.tip}
     binding.pry
   end
   
