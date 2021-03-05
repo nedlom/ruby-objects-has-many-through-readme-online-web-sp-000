@@ -19,7 +19,7 @@ class Customer
   end
   
   def meals
-    z = Meal.all.select {|m| m.customer = self}
+    z = Meal.all.select {|m| m.name = self}
     binding.pry
   end
   
