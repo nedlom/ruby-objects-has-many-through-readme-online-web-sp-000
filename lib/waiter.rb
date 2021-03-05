@@ -1,5 +1,7 @@
 class Waiter
   
+  @@all = []
+  
   attr_accessor :name, :years
   
   def initialize(name, years)
@@ -9,7 +11,7 @@ class Waiter
   end
   
   def self.all
-    @@all = []
+    @@all 
   end
   
   def new_meal
