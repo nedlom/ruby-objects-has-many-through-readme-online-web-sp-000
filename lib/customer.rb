@@ -14,6 +14,12 @@ class Customer
   def new_meal
   end
   
+  def meal
+  end
+  
+  def waiters
+  end
+  
 end
 
 
