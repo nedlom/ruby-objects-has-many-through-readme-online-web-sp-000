@@ -1,8 +1,8 @@
 require 'pry'
 class Customer
   
+  @@all = []
   attr_accessor :name, :age
-  
   
   def initialize(name, age)
     @name = name
@@ -11,10 +11,9 @@ class Customer
   end
   
   def self.all
-    @@all = []
+    @@all
   end
-  
-  binding.pry
+ 
   def new_meal(waiter, total, tip)
     Meal.new(waiter, self, total, tip)
   end
