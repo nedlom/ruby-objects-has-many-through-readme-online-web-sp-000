@@ -12,6 +12,7 @@ class Customer
   end
   
   def new_meal
+    
   end
   
   def meal
