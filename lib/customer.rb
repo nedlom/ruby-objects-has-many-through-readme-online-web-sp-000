@@ -1,7 +1,6 @@
 class Customer
   
   attr_accessor :name, :age
-  @@all = []
   
   
   def initialize(name, age)
@@ -11,7 +10,7 @@ class Customer
   end
   
   def self.all
-    @@all 
+    @@all = []
   end
   
   binding.pry
